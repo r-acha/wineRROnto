@@ -1,0 +1,198 @@
+{
+  "@context" : {
+    "hasMeasurements" : {
+      "@id" : "https://w3id.org/def/wineRROnto#hasMeasurements",
+      "@type" : "@id"
+    },
+    "wineryOf" : {
+      "@id" : "https://w3id.org/def/wineRROnto#wineryOf",
+      "@type" : "@id"
+    },
+    "hasPrice" : {
+      "@id" : "https://w3id.org/def/wineRROnto#hasPrice",
+      "@type" : "@id"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "hasRating" : {
+      "@id" : "https://w3id.org/def/wineRROnto#hasRating",
+      "@type" : "@id"
+    },
+    "Winery" : {
+      "@id" : "https://w3id.org/def/wineRROnto#Winery"
+    },
+    "acidityOf" : {
+      "@id" : "https://w3id.org/def/wineRROnto#acidityOf",
+      "@type" : "@id"
+    },
+    "regionName" : {
+      "@id" : "https://w3id.org/def/wineRROnto#regionName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Expensive" : {
+      "@id" : "https://w3id.org/def/wineRROnto#Expensive"
+    },
+    "numReviews" : {
+      "@id" : "https://w3id.org/def/wineRROnto#numReviews",
+      "@type" : "@id"
+    },
+    "Type" : {
+      "@id" : "https://w3id.org/def/wineRROnto#Type"
+    },
+    "hasWinery" : {
+      "@id" : "https://w3id.org/def/wineRROnto#hasWinery",
+      "@type" : "@id"
+    },
+    "Top" : {
+      "@id" : "https://w3id.org/def/wineRROnto#Top"
+    },
+    "typeName" : {
+      "@id" : "https://w3id.org/def/wineRROnto#typeName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Body" : {
+      "@id" : "https://w3id.org/def/wineRROnto#Body"
+    },
+    "wineYear" : {
+      "@id" : "https://w3id.org/def/wineRROnto#wineYear",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "acidityValue" : {
+      "@id" : "https://w3id.org/def/wineRROnto#acidityValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Medium" : {
+      "@id" : "https://w3id.org/def/wineRROnto#Medium"
+    },
+    "hasNumReviews" : {
+      "@id" : "https://w3id.org/def/wineRROnto#hasNumReviews",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "authors" : {
+      "@id" : "http://purl.org/dc/elements/1.1/authors"
+    },
+    "No_acid" : {
+      "@id" : "https://w3id.org/def/wineRROnto#No_acid"
+    },
+    "hasAcidity" : {
+      "@id" : "https://w3id.org/def/wineRROnto#hasAcidity",
+      "@type" : "@id"
+    },
+    "maxQualifiedCardinality" : {
+      "@id" : "http://www.w3.org/2002/07/owl#maxQualifiedCardinality"
+    },
+    "Light" : {
+      "@id" : "https://w3id.org/def/wineRROnto#Light"
+    },
+    "Acid" : {
+      "@id" : "https://w3id.org/def/wineRROnto#Acid"
+    },
+    "Heavy" : {
+      "@id" : "https://w3id.org/def/wineRROnto#Heavy"
+    },
+    "Price" : {
+      "@id" : "https://w3id.org/def/wineRROnto#Price"
+    },
+    "Measurements" : {
+      "@id" : "https://w3id.org/def/wineRROnto#Measurements"
+    },
+    "hasType" : {
+      "@id" : "https://w3id.org/def/wineRROnto#hasType",
+      "@type" : "@id"
+    },
+    "ratingOf" : {
+      "@id" : "https://w3id.org/def/wineRROnto#ratingOf",
+      "@type" : "@id"
+    },
+    "wineryName" : {
+      "@id" : "https://w3id.org/def/wineRROnto#wineryName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Num_reviews" : {
+      "@id" : "https://w3id.org/def/wineRROnto#Num_reviews"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "measurementsOf" : {
+      "@id" : "https://w3id.org/def/wineRROnto#measurementsOf",
+      "@type" : "@id"
+    },
+    "High_acidity" : {
+      "@id" : "https://w3id.org/def/wineRROnto#High_acidity"
+    },
+    "priceValue" : {
+      "@id" : "https://w3id.org/def/wineRROnto#priceValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "hasBody" : {
+      "@id" : "https://w3id.org/def/wineRROnto#hasBody",
+      "@type" : "@id"
+    },
+    "Rating" : {
+      "@id" : "https://w3id.org/def/wineRROnto#Rating"
+    },
+    "ratingValue" : {
+      "@id" : "https://w3id.org/def/wineRROnto#ratingValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "Acidity" : {
+      "@id" : "https://w3id.org/def/wineRROnto#Acidity"
+    },
+    "Normal" : {
+      "@id" : "https://w3id.org/def/wineRROnto#Normal"
+    },
+    "Cheap" : {
+      "@id" : "https://w3id.org/def/wineRROnto#Cheap"
+    },
+    "wineName" : {
+      "@id" : "https://w3id.org/def/wineRROnto#wineName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "bodyOf" : {
+      "@id" : "https://w3id.org/def/wineRROnto#bodyOf",
+      "@type" : "@id"
+    },
+    "typeOf" : {
+      "@id" : "https://w3id.org/def/wineRROnto#typeOf",
+      "@type" : "@id"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "bodyValue" : {
+      "@id" : "https://w3id.org/def/wineRROnto#bodyValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "regionOf" : {
+      "@id" : "https://w3id.org/def/wineRROnto#regionOf",
+      "@type" : "@id"
+    },
+    "hasRegion" : {
+      "@id" : "https://w3id.org/def/wineRROnto#hasRegion",
+      "@type" : "@id"
+    },
+    "Region" : {
+      "@id" : "https://w3id.org/def/wineRROnto#Region"
+    },
+    "priceOf" : {
+      "@id" : "https://w3id.org/def/wineRROnto#priceOf",
+      "@type" : "@id"
+    },
+    "hasNumReviewsValue" : {
+      "@id" : "https://w3id.org/def/wineRROnto#hasNumReviewsValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger"
+    },
+    "Wine" : {
+      "@id" : "https://w3id.org/def/wineRROnto#Wine"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "wineRROnto:Expensive" "wineRROnto:Price" "wineRROnto:Normal" "wineRROnto:Medium" "wineRROnto:Num_reviews" "wineRROnto:Cheap" "wineRROnto:Light" "wineRROnto:Top" "wineRROnto:No_acid" "wineRROnto:Heavy" "wineRROnto:Body" "wineRROnto:High_acidity" "wineRROnto:Wine" "wineRROnto:Acid" "wineRROnto:Rating" "wineRROnto:Acidity" "wineRROnto:Measurements" ; /*classes style*/
+	"wineRROnto:Medium" -> "wineRROnto:Body" [ label = "rdfs:subClassOf" ];
+	"wineRROnto:Num_reviews" -> "wineRROnto:Measurements" [ label = "rdfs:subClassOf" ];
+	"wineRROnto:Body" -> "wineRROnto:Measurements" [ label = "rdfs:subClassOf" ];
+	"wineRROnto:Price" -> "wineRROnto:Measurements" [ label = "rdfs:subClassOf" ];
+	"wineRROnto:No_acid" -> "wineRROnto:Wine" [ label = "rdfs:subClassOf" ];
+	"wineRROnto:Rating" -> "wineRROnto:Measurements" [ label = "rdfs:subClassOf" ];
+	"wineRROnto:Expensive" -> "wineRROnto:Price" [ label = "rdfs:subClassOf" ];
+	"wineRROnto:Top" -> "wineRROnto:Rating" [ label = "rdfs:subClassOf" ];
+	"wineRROnto:Light" -> "wineRROnto:Body" [ label = "rdfs:subClassOf" ];
+	"wineRROnto:Cheap" -> "wineRROnto:Price" [ label = "rdfs:subClassOf" ];
+	"wineRROnto:Normal" -> "wineRROnto:Price" [ label = "rdfs:subClassOf" ];
+	"wineRROnto:Acidity" -> "wineRROnto:Measurements" [ label = "rdfs:subClassOf" ];
+	"wineRROnto:Heavy" -> "wineRROnto:Body" [ label = "rdfs:subClassOf" ];
+	"wineRROnto:Acid" -> "wineRROnto:Wine" [ label = "rdfs:subClassOf" ];
+	"wineRROnto:High_acidity" -> "wineRROnto:Acidity" [ label = "rdfs:subClassOf" ];
+
+}
