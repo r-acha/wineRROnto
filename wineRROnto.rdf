@@ -1,0 +1,1535 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-28/"
+     xml:base="http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-28/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:wineRROnto="https://w3id.org/def/wineRROnto#"
+     xmlns:wineRapOnto="https://w3id.org/def/wineRapOnto#">
+    <owl:Ontology rdf:about="https://w3id.org/def/wineRROnto">
+        <owl:versionIRI rdf:resource="https://w3id.org/def/wineRROnto/1.0.0"/>
+        <dc:authors>Ricardo Arcega Aperte
+Roberto Acha Paz</dc:authors>
+        <rdfs:label>wineRROnto</rdfs:label>
+        <owl:versionInfo>1.0.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/authors -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/authors"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#sameAs -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#sameAs"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#maxQualifiedCardinality -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#maxQualifiedCardinality"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/def/wineRROnto#acidityOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/wineRROnto#acidityOf">
+        <owl:inverseOf rdf:resource="https://w3id.org/def/wineRROnto#hasAcidity"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/wineRROnto#Acidity"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/wineRROnto#Wine"/>
+        <rdfs:comment>It is an object of a wine</rdfs:comment>
+        <rdfs:label>acidityOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/wineRROnto#bodyOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/wineRROnto#bodyOf">
+        <owl:inverseOf rdf:resource="https://w3id.org/def/wineRROnto#hasBody"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/wineRROnto#Body"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/wineRROnto#Wine"/>
+        <rdfs:comment>It is an object of a wine</rdfs:comment>
+        <rdfs:label>bodyOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/wineRROnto#hasAcidity -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/wineRROnto#hasAcidity">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/wineRROnto#Wine"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/wineRROnto#Acidity"/>
+        <rdfs:comment>Has a object acidity</rdfs:comment>
+        <rdfs:label>hasAcidity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/wineRROnto#hasBody -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/wineRROnto#hasBody">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/wineRROnto#Wine"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/wineRROnto#Body"/>
+        <rdfs:comment>Has a object body</rdfs:comment>
+        <rdfs:label>hasBody</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/wineRROnto#hasMeasurements -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/wineRROnto#hasMeasurements">
+        <owl:inverseOf rdf:resource="https://w3id.org/def/wineRROnto#measurementsOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/wineRROnto#Wine"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/wineRROnto#Measurements"/>
+        <rdfs:comment>Has a object Measurements</rdfs:comment>
+        <rdfs:label>hasMeasurements</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/wineRROnto#hasNumReviews -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/wineRROnto#hasNumReviews">
+        <owl:inverseOf rdf:resource="https://w3id.org/def/wineRROnto#numReviews"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/wineRROnto#Wine"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/wineRROnto#Num_reviews"/>
+        <rdfs:comment>Has a object NumReviews</rdfs:comment>
+        <rdfs:label>hasNumReviews</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/wineRROnto#hasPrice -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/wineRROnto#hasPrice">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/def/wineRROnto#priceOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/wineRROnto#Wine"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/wineRROnto#Price"/>
+        <rdfs:comment>Has a object Price</rdfs:comment>
+        <rdfs:label>hasPrice</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/wineRROnto#hasRating -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/wineRROnto#hasRating">
+        <owl:inverseOf rdf:resource="https://w3id.org/def/wineRROnto#ratingOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/wineRROnto#Wine"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/wineRROnto#Rating"/>
+        <rdfs:comment>Has a object Rating</rdfs:comment>
+        <rdfs:label>hasRating</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/wineRROnto#hasRegion -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/wineRROnto#hasRegion">
+        <owl:inverseOf rdf:resource="https://w3id.org/def/wineRROnto#regionOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/wineRROnto#Wine"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/wineRROnto#Region"/>
+        <rdfs:comment>Has a object Region</rdfs:comment>
+        <rdfs:label>hasRegion</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/wineRROnto#hasType -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/wineRROnto#hasType">
+        <owl:inverseOf rdf:resource="https://w3id.org/def/wineRROnto#typeOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/wineRROnto#Wine"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/wineRROnto#Type"/>
+        <rdfs:comment>Has a object Type</rdfs:comment>
+        <rdfs:label>hasType</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/wineRROnto#hasWinery -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/wineRROnto#hasWinery">
+        <owl:inverseOf rdf:resource="https://w3id.org/def/wineRROnto#wineryOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/wineRROnto#Wine"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/wineRROnto#Winery"/>
+        <rdfs:comment>Has a object Winery</rdfs:comment>
+        <rdfs:label>hasWinery</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/wineRROnto#measurementsOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/wineRROnto#measurementsOf">
+        <rdfs:domain rdf:resource="https://w3id.org/def/wineRROnto#Measurements"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/wineRROnto#Wine"/>
+        <rdfs:comment>It is an object of a wine</rdfs:comment>
+        <rdfs:label>measurementsOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/wineRROnto#numReviews -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/wineRROnto#numReviews">
+        <rdfs:domain rdf:resource="https://w3id.org/def/wineRROnto#Num_reviews"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/wineRROnto#Wine"/>
+        <rdfs:comment>It is an object of a wine</rdfs:comment>
+        <rdfs:label>numReviewsOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/wineRROnto#priceOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/wineRROnto#priceOf">
+        <rdfs:domain rdf:resource="https://w3id.org/def/wineRROnto#Price"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/wineRROnto#Wine"/>
+        <rdfs:comment>It is an object of a wine</rdfs:comment>
+        <rdfs:label>priceOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/wineRROnto#ratingOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/wineRROnto#ratingOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/wineRROnto#Rating"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/wineRROnto#Wine"/>
+        <rdfs:comment>It is an object of a wine</rdfs:comment>
+        <rdfs:label>ratingOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/wineRROnto#regionOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/wineRROnto#regionOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/wineRROnto#Region"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/wineRROnto#Wine"/>
+        <rdfs:comment>It is an object of a wine</rdfs:comment>
+        <rdfs:label>regionOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/wineRROnto#typeOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/wineRROnto#typeOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/wineRROnto#Type"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/wineRROnto#Wine"/>
+        <rdfs:comment>It is an object of a wine</rdfs:comment>
+        <rdfs:label>typeOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/wineRROnto#wineryOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/wineRROnto#wineryOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/wineRROnto#Winery"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/wineRROnto#Wine"/>
+        <rdfs:comment>It is an object of a wine</rdfs:comment>
+        <rdfs:label>wineryOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/def/wineRROnto#acidityValue -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/wineRROnto#acidityValue">
+        <rdfs:domain rdf:resource="https://w3id.org/def/wineRROnto#Acidity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Has a value of acidity</rdfs:comment>
+        <rdfs:label>hasAcidityValue</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/wineRROnto#bodyValue -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/wineRROnto#bodyValue">
+        <rdfs:domain rdf:resource="https://w3id.org/def/wineRROnto#Body"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Has a value of body</rdfs:comment>
+        <rdfs:label>hasBodyValue</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/wineRROnto#hasNumReviewsValue -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/wineRROnto#hasNumReviewsValue">
+        <rdfs:domain rdf:resource="https://w3id.org/def/wineRROnto#Num_reviews"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+        <rdfs:comment>Has a value of number of reviews</rdfs:comment>
+        <rdfs:label>hasNumReviewsValue</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/wineRROnto#priceValue -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/wineRROnto#priceValue">
+        <rdfs:domain rdf:resource="https://w3id.org/def/wineRROnto#Price"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Has a value of price</rdfs:comment>
+        <rdfs:label>hasPriceValue</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/wineRROnto#ratingValue -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/wineRROnto#ratingValue">
+        <rdfs:domain rdf:resource="https://w3id.org/def/wineRROnto#Rating"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Has a value of rating</rdfs:comment>
+        <rdfs:label>hasRatingValue</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/wineRROnto#regionName -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/wineRROnto#regionName">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/wineRROnto#hasRegion"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/def/wineRROnto#Region"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Has a name of region</rdfs:comment>
+        <rdfs:label>hasRegionName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/wineRROnto#typeName -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/wineRROnto#typeName">
+        <rdfs:domain rdf:resource="https://w3id.org/def/wineRROnto#Type"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Has a value of type</rdfs:comment>
+        <rdfs:label>hasTypeName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/wineRROnto#wineName -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/wineRROnto#wineName">
+        <rdfs:domain rdf:resource="https://w3id.org/def/wineRROnto#Wine"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Has a name</rdfs:comment>
+        <rdfs:label>hasWineName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/wineRROnto#wineYear -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/wineRROnto#wineYear">
+        <rdfs:domain rdf:resource="https://w3id.org/def/wineRROnto#Wine"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Has a value of year</rdfs:comment>
+        <rdfs:label>hasWineYear</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/wineRROnto#wineryName -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/wineRROnto#wineryName">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/wineRROnto#hasWinery"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/def/wineRROnto#Winery"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Has a winery name</rdfs:comment>
+        <rdfs:label>hasWineryName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/def/wineRROnto#Acid -->
+
+    <owl:Class rdf:about="https://w3id.org/def/wineRROnto#Acid">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/wineRROnto#Wine"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/def/wineRROnto#No_acid"/>
+        <rdfs:comment>Acid wines</rdfs:comment>
+        <rdfs:label>Acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/wineRROnto#Acidity -->
+
+    <owl:Class rdf:about="https://w3id.org/def/wineRROnto#Acidity">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/wineRROnto#acidityValue"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/wineRROnto#Measurements"/>
+        <rdfs:comment>Acidity wine</rdfs:comment>
+        <rdfs:label>Acidity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/wineRROnto#Body -->
+
+    <owl:Class rdf:about="https://w3id.org/def/wineRROnto#Body">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/wineRROnto#bodyValue"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/wineRROnto#Measurements"/>
+        <rdfs:comment>Body od wine</rdfs:comment>
+        <rdfs:label>Body</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/wineRROnto#Cheap -->
+
+    <owl:Class rdf:about="https://w3id.org/def/wineRROnto#Cheap">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/wineRROnto#Price"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/def/wineRROnto#Expensive"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/def/wineRROnto#Normal"/>
+        <rdfs:comment>Cheap wines</rdfs:comment>
+        <rdfs:label>Cheap</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/wineRROnto#Expensive -->
+
+    <owl:Class rdf:about="https://w3id.org/def/wineRROnto#Expensive">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/wineRROnto#Price"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/def/wineRROnto#Normal"/>
+        <rdfs:comment>Expensive wines</rdfs:comment>
+        <rdfs:label>Expensive</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/wineRROnto#Heavy -->
+
+    <owl:Class rdf:about="https://w3id.org/def/wineRROnto#Heavy">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/wineRROnto#Body"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/def/wineRROnto#Light"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/def/wineRROnto#Medium"/>
+        <rdfs:comment>Heavy level  of body</rdfs:comment>
+        <rdfs:label>Heavy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/wineRROnto#High_acidity -->
+
+    <owl:Class rdf:about="https://w3id.org/def/wineRROnto#High_acidity">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/wineRROnto#Acidity"/>
+        <rdfs:comment>High level of acidity</rdfs:comment>
+        <rdfs:label>High_acidity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/wineRROnto#Light -->
+
+    <owl:Class rdf:about="https://w3id.org/def/wineRROnto#Light">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/wineRROnto#Body"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/def/wineRROnto#Medium"/>
+        <rdfs:comment>Light value of body</rdfs:comment>
+        <rdfs:label>Light</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/wineRROnto#Measurements -->
+
+    <owl:Class rdf:about="https://w3id.org/def/wineRROnto#Measurements">
+        <rdfs:comment>Measurements of wine cualities</rdfs:comment>
+        <rdfs:label>Measurements</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/wineRROnto#Medium -->
+
+    <owl:Class rdf:about="https://w3id.org/def/wineRROnto#Medium">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/wineRROnto#Body"/>
+        <rdfs:comment>Medium level of body</rdfs:comment>
+        <rdfs:label>Medium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/wineRROnto#No_acid -->
+
+    <owl:Class rdf:about="https://w3id.org/def/wineRROnto#No_acid">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/wineRROnto#Wine"/>
+        <rdfs:comment>No acid wines</rdfs:comment>
+        <rdfs:label>No_acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/wineRROnto#Normal -->
+
+    <owl:Class rdf:about="https://w3id.org/def/wineRROnto#Normal">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/wineRROnto#Price"/>
+        <rdfs:comment>Normal wine price</rdfs:comment>
+        <rdfs:label>Normal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/wineRROnto#Num_reviews -->
+
+    <owl:Class rdf:about="https://w3id.org/def/wineRROnto#Num_reviews">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/wineRROnto#hasNumReviewsValue"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/wineRROnto#Measurements"/>
+        <rdfs:comment>Number of reviews</rdfs:comment>
+        <rdfs:label>Num_reviews</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/wineRROnto#Price -->
+
+    <owl:Class rdf:about="https://w3id.org/def/wineRROnto#Price">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/wineRROnto#priceValue"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/wineRROnto#Measurements"/>
+        <rdfs:comment>Price of wines</rdfs:comment>
+        <rdfs:label>Price</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/wineRROnto#Rating -->
+
+    <owl:Class rdf:about="https://w3id.org/def/wineRROnto#Rating">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/wineRROnto#ratingValue"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/wineRROnto#Measurements"/>
+        <rdfs:comment>Rating of wine</rdfs:comment>
+        <rdfs:label>Rating</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/wineRROnto#Region -->
+
+    <owl:Class rdf:about="https://w3id.org/def/wineRROnto#Region">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/wineRROnto#regionName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:comment>Wine regions</rdfs:comment>
+        <rdfs:label>Region</rdfs:label>
+        <rdfs:sameAs>https://dbpedia.org/page/Region</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/wineRROnto#Top -->
+
+    <owl:Class rdf:about="https://w3id.org/def/wineRROnto#Top">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/wineRROnto#Rating"/>
+        <rdfs:comment>Top group of wines by rating</rdfs:comment>
+        <rdfs:label>Top</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/wineRROnto#Type -->
+
+    <owl:Class rdf:about="https://w3id.org/def/wineRROnto#Type">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/wineRROnto#typeName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:comment>Type of wines</rdfs:comment>
+        <rdfs:label>Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/wineRROnto#Wine -->
+
+    <owl:Class rdf:about="https://w3id.org/def/wineRROnto#Wine">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/wineRROnto#wineName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/wineRROnto#wineYear"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:comment>Wines of Spain</rdfs:comment>
+        <rdfs:label>Wine</rdfs:label>
+        <rdfs:sameAs>https://dbpedia.org/page/Wine</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/wineRROnto#Winery -->
+
+    <owl:Class rdf:about="https://w3id.org/def/wineRROnto#Winery">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/wineRROnto#wineryName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:comment>Cellar of a wine</rdfs:comment>
+        <rdfs:label>Winery</rdfs:label>
+        <rdfs:sameAs>https://dbpedia.org/page/Winery</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/def/wineRROnto#Arousa -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/wineRROnto#Arousa">
+        <wineRROnto:wineName>Arousa</wineRROnto:wineName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/wineRROnto#Cuatro_Pasos -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/wineRROnto#Cuatro_Pasos">
+        <wineRROnto:acidityValue>3</wineRROnto:acidityValue>
+        <wineRROnto:bodyValue>3</wineRROnto:bodyValue>
+        <wineRROnto:hasNumReviewsValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">456456</wineRROnto:hasNumReviewsValue>
+        <wineRROnto:priceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">9.0</wineRROnto:priceValue>
+        <wineRROnto:wineName>Cuatro Pasos</wineRROnto:wineName>
+        <wineRROnto:wineYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2023</wineRROnto:wineYear>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/wineRROnto#Cuesta_de_Las_Liebres -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/wineRROnto#Cuesta_de_Las_Liebres">
+        <wineRROnto:hasWinery rdf:resource="https://w3id.org/def/wineRROnto#Winery_1"/>
+        <wineRROnto:acidityValue>5</wineRROnto:acidityValue>
+        <wineRROnto:bodyValue>5.0</wineRROnto:bodyValue>
+        <wineRROnto:priceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">55.0</wineRROnto:priceValue>
+        <wineRROnto:wineryName></wineRROnto:wineryName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/wineRROnto#Marieta -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/wineRROnto#Marieta">
+        <wineRROnto:acidityValue>NA</wineRROnto:acidityValue>
+        <wineRROnto:bodyValue>NA</wineRROnto:bodyValue>
+        <wineRROnto:hasNumReviewsValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">454</wineRROnto:hasNumReviewsValue>
+        <wineRROnto:priceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10.0</wineRROnto:priceValue>
+        <wineRROnto:ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.4</wineRROnto:ratingValue>
+        <wineRROnto:typeName>Albariño</wineRROnto:typeName>
+        <wineRROnto:wineName>Marieta</wineRROnto:wineName>
+        <wineRROnto:wineYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2022</wineRROnto:wineYear>
+        <wineRROnto:wineryName>Martin Codax</wineRROnto:wineryName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/wineRROnto#Martin_Codax_Espumoso -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/wineRROnto#Martin_Codax_Espumoso">
+        <wineRROnto:acidityValue>3</wineRROnto:acidityValue>
+        <wineRROnto:bodyValue>3</wineRROnto:bodyValue>
+        <wineRROnto:hasNumReviewsValue rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3444</wineRROnto:hasNumReviewsValue>
+        <wineRROnto:priceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1002.0</wineRROnto:priceValue>
+        <wineRROnto:ratingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.9</wineRROnto:ratingValue>
+        <wineRROnto:wineName>Martin Codax Espumoso</wineRROnto:wineName>
+        <wineRROnto:wineYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2022</wineRROnto:wineYear>
+        <rdfs:label>Martin_Codax_Espumoso</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/wineRROnto#Winery_1 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/wineRROnto#Winery_1">
+        <wineRROnto:wineryName>Pago de Carraovejas</wineRROnto:wineryName>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="urn:swrl:var#w">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#o">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/def/wineRROnto#priceValue"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#o"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#w"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="https://w3id.org/def/wineRROnto#Price"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#o"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#w"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/wineRROnto#Expensive"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#o"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/def/wineRROnto#priceValue"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#o"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#w"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="https://w3id.org/def/wineRROnto#Price"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#o"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#w"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/wineRROnto#Cheap"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#o"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/wineRROnto#Rating"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#o"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/def/wineRROnto#ratingValue"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#o"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#w"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#w"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.8</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/wineRROnto#Top"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#o"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#equal"/>
+                        <swrl:arguments>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first rdf:resource="urn:swrl:var#w"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>1</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/def/wineRROnto#acidityValue"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#o"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#w"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="https://w3id.org/def/wineRROnto#Acidity"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#o"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/wineRROnto#No_acid"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#o"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#equal"/>
+                        <swrl:arguments>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first rdf:resource="urn:swrl:var#w"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>2</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/def/wineRROnto#acidityValue"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#o"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#w"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="https://w3id.org/def/wineRROnto#Acidity"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#o"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/wineRROnto#No_acid"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#o"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/def/wineRROnto#acidityValue"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#o"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#w"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="https://w3id.org/def/wineRROnto#Acidity"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#o"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#equal"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#w"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first>3</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/wineRROnto#Acid"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#o"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/def/wineRROnto#acidityValue"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#o"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#w"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="https://w3id.org/def/wineRROnto#Acidity"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#o"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#equal"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#w"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first>3</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/wineRROnto#High_acidity"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#o"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/def/wineRROnto#hasBody"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#o"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#w"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="https://w3id.org/def/wineRROnto#Body"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#o"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#equal"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#w"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first>5</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/wineRROnto#Heavy"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#o"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#equal"/>
+                        <swrl:arguments>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first rdf:resource="urn:swrl:var#w"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>2</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="https://w3id.org/def/wineRROnto#Body"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#o"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/def/wineRROnto#bodyValue"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#o"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#w"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/wineRROnto#Light"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#o"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/wineRROnto#Body"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#o"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/def/wineRROnto#bodyValue"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#o"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#w"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#equal"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#w"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first>3</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/wineRROnto#Light"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#o"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/wineRROnto#Body"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#o"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/def/wineRROnto#bodyValue"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#o"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#w"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#equal"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#w"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first>4</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/wineRROnto#Medium"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#o"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
